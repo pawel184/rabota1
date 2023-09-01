@@ -1,33 +1,25 @@
-start = 1
-end = 30
+current_number = 1
 
-# Начало цикла while
-while start <= end:
-    # Проверяем текущий диапазон чисел
-    if start >= 1 and start <= 7:
+while current_number <= 30:
+    if current_number <= 7:
         print("Это диапазон чисел от 1 до 7")
-        while start <= 7:
-            print(start)
-            start += 1
-        continue
-    elif   start <= 15:
+        for i in range(1, 8):
+            print(i)
+        current_number = 8  
+    elif  current_number <= 15:
         print("Это диапазон чисел от 10 до 15")
-        while start <= 15:
-            print(start)
-            start += 1
-        continue
-    elif start >= 25 and start <= 30:
+        for i in range(10, 16):
+            print(i)
+        current_number = 16 
+    elif  current_number <= 30:
         print("Это диапазон чисел от 25 до 30")
-        while start <= 30:
-            print(start)
-            start += 1
-        continue
-    else:
-        print("Ой забыли про эти числа")
-        while start <= 24:
-            print(start)
-            start += 1
-        continue
+        for i in range(25, 31):
+            print(i)
+        current_number = 31 
 
+        print("Ой, забыли про эти числа")
+        for i in range(16, 24):
+            print(i)
+        current_number = 31
     
 

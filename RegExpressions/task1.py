@@ -8,7 +8,6 @@ match3 = re.search(r'\d+',text)
 match4 = re.search(r'\d\d.\d\d.\d+',text)
 match5 = re.search(r'p\w+',text)
 match6 = re.search(r'g\w+',text)
-
 name = match1.group()
 surname = match2.group()
 age = match3.group()
