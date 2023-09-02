@@ -19,6 +19,6 @@ while current_number <= 30:
         print("Ой, забыли про эти числа")
         for i in range(8, 10):
                 print(i)
-        for i in range(16, 24):
+        for i in range(16, 25):
             print(i)
         current_number = 31
