@@ -1,0 +1,16 @@
+import os
+
+folder_name = "json"
+
+if not os.path.exists(folder_name):
+    os.mkdir(folder_name)
+file_path = os.path.join(folder_name, "json.py")
+
+# Создайте файл, если его еще нет
+if not os.path.exists(file_path):
+    with open(file_path, "w") as file:
+        # Здесь вы можете записать необходимый код в файл, если это требуется
+        pass
+    print(f"Файл '{file_path}' создан.")
+else:
+    print(f"Файл '{file_path}' уже существует.")
